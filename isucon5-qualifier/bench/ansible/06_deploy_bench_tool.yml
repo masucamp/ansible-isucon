@@ -1,8 +1,8 @@
 ---
 - hosts: benchservers
   gather_facts: no
-  sudo: yes
-  sudo_user: isucon
+  become: yes
+  become_user: isucon
   tasks:
     - git:
         repo=https://github.com/isucon/isucon5-qualify.git
