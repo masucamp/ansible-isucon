@@ -20,8 +20,9 @@ ansible-playbook -i remote playbook.yml
 
 Local:
 ```
-yum install -y epel-release git
-yum install -y ansible
+apt-add-repository ppa:ansible/ansible
+apt update
+apt install git ansible
 git clone https://github.com/matsuu/ansible-isucon.git
 cd ansible-isucon/isucon5-qualifier
 # for image
