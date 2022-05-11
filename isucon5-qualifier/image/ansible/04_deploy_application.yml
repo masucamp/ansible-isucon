@@ -12,6 +12,16 @@
     - command: rm -rf /tmp/isucon5-qualify
       args:
         removes: /tmp/isucon5-qualify
+    - name: fix isucon user
+      replace:
+        dest: /home/isucon/webapp/java/src/main/resources/application.properties
+        regexp: 'ISUCON5_DB_USER:root'
+        replace: 'ISUCON5_DB_USER:isucon'
+    - name: fix isucon password
+      replace:
+        dest: /home/isucon/webapp/java/src/main/resources/application.properties
+        regexp: 'ISUCON5_DB_PASSWORD:'
+        replace: 'ISUCON5_DB_PASSWORD:isucon'
     - name: java
       shell: ./mvnw package
       args:
