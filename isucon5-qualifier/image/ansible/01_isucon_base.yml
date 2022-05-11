@@ -1,6 +1,6 @@
 ---
 - hosts: imageservers
-  sudo: yes
+  become: yes
   gather_facts: no
   tasks:
     - name: change timezone to JST
