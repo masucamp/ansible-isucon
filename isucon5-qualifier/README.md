@@ -6,7 +6,7 @@ Ansible playbook for [ISUCON5-qualifier](http://isucon.net/archives/45166636.htm
 
 ## Requirement
 
-- Ubuntu 15.04
+- Ubuntu 16.04
 
 ## Usage
 
