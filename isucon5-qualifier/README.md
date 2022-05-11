@@ -12,7 +12,7 @@ Ansible playbook for [ISUCON5-qualifier](http://isucon.net/archives/45166636.htm
 
 Remote:
 ```
-git clone https://github.com/matsuu/ansible-isucon.git
+git clone https://github.com/masucamp/ansible-isucon.git
 cd ansible-isucon/isucon5-qualifier
 ${EDITOR} remote
 ansible-playbook -i remote playbook.yml
@@ -23,7 +23,7 @@ Local:
 apt-add-repository ppa:ansible/ansible
 apt update
 apt install git ansible
-git clone https://github.com/matsuu/ansible-isucon.git
+git clone https://github.com/masucamp/ansible-isucon.git
 cd ansible-isucon/isucon5-qualifier
 # for image
 ansible-playbook -i local image/ansible/playbook.yml
